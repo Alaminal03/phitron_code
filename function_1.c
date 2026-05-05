@@ -1,18 +1,16 @@
 #include<stdio.h>
 
-void value(int a,int b)
+int sum(int a,int b)
 {
-    printf("%d\n", a + b);
-}
-void result(int a,int b)
-{
-    printf("%d\n", a - b);
+    int ans = a + b;
+    return ans;
 }
 
 int main()
 {
-    value(400, 200);
-    result(60, 80);
+    int ans = sum(10, 50);
+    int ans2 = sum(40, 50);
 
+    printf("SUM = %d\nSUM = %d", ans,ans2);
     return 0;
 }
