@@ -1,15 +1,15 @@
 #include<stdio.h>
 
-int square(int a)
+void calculator(int a,int b)
 {
-    return a * a;
+    int sum = a + b;
+    printf("%d", sum);
 }
 
 int main()
 {
-    int num;
-    printf("Enter any number = ");
-    scanf("%d", &num);
-    int result = square(num);
-    printf("Square value is = %d", result);
+    int a, b;
+    scanf("%d%d", &a, &b);
+    calculator(a, b);
+    return 0;
 }
